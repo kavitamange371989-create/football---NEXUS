@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTBALL NEXUS | PREM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg-grid"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-icon">⚡</div>
+        <div>
+            <h1>FOOTBALL NEXUS</h1>
+            <p>PLAYER INTELLIGENCE SYSTEM</p>
+        </div>
+    </div>
+
+    <div class="status">
+        <span class="status-dot"></span>
+        <span id="systemStatus">SYSTEM ONLINE</span>
+    </div>
+</header>
+
+
+<main class="dashboard">
+
+    <!-- PLAYER PROFILE -->
+    <section class="glass player-panel">
+        <div class="section-label">01 / PLAYER PROFILE</div>
+
+        <div class="player-content">
+
+            <div class="player-avatar">
+                <div class="avatar-ring"></div>
+                <div class="avatar-number">#02</div>
+                <div class="avatar-position">LEFT BACK</div>
+            </div>
+
+            <div class="player-info">
+                <div class="player-tag">ELITE FOOTBALL PLAYER</div>
+                <h2>PREM</h2>
+
+                <div class="player-meta">
+                    <span>AGE <b>15</b></span>
+                    <span>POSITION <b>LEFT BACK</b></span>
+                    <span>FOOT <b>RIGHT</b></span>
+                    <span>JERSEY <b>#02</b></span>
+                </div>
+
+                <div class="rating-box">
+                    <div>
+                        <small>OVERALL RATING</small>
+                        <strong id="overall">82</strong>
+                    </div>
+
+                    <div class="rating-up" id="ratingBadge">▲ ELITE</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ATTRIBUTES -->
+    <section class="stats-section">
+        <div class="section-label">02 / PLAYER ATTRIBUTES</div>
+
+        <div class="stats-grid">
+
+            <div class="glass stat-card">
+                <span>⚡</span>
+                <p>PACE</p>
+                <strong>88</strong>
+                <div class="bar"><i style="width:88%"></i></div>
+            </div>
+
+            <div class="glass stat-card">
+                <span>🛡️</span>
+                <p>DEFENDING</p>
+                <strong>91</strong>
+                <div class="bar"><i style="width:91%"></i></div>
+            </div>
+
+            <div class="glass stat-card">
+                <span>🎯</span>
+                <p>PASSING</p>
+                <strong>79</strong>
+                <div class="bar"><i style="width:79%"></i></div>
+            </div>
+
+            <div class="glass stat-card">
+                <span>🔥</span>
+                <p>STAMINA</p>
+                <strong>86</strong>
+                <div class="bar"><i style="width:86%"></i></div>
+            </div>
+
+            <div class="glass stat-card">
+                <span>👁</span>
+                <p>VISION</p>
+                <strong>81</strong>
+                <div class="bar"><i style="width:81%"></i></div>
+            </div>
+
+            <div class="glass stat-card">
+                <span>📈</span>
+                <p>FORM</p>
+                <strong>94</strong>
+                <div class="bar"><i style="width:94%"></i></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="lower-grid">
+
+        <!-- PERFORMANCE -->
+        <section class="glass performance">
+            <div class="section-heading">
+                <h3>MATCH PERFORMANCE</h3>
+                <div class="live-badge">LIVE DATA</div>
+            </div>
+
+            <div class="chart">
+                <div class="chart-line"></div>
+                <div class="point p1"></div>
+                <div class="point p2"></div>
+                <div class="point p3"></div>
+                <div class="point p4"></div>
+                <div class="point p5"></div>
+                <div class="point p6"></div>
+            </div>
+
+            <div class="chart-labels">
+                <span>M1</span>
+                <span>M2</span>
+                <span>M3</span>
+                <span>M4</span>
+                <span>M5</span>
+                <span>NOW</span>
+            </div>
+        </section>
+
+
+        <!-- NEXT MATCH -->
+        <section class="glass match-card">
+            <div class="section-heading">
+                <h3>NEXT MATCH</h3>
+            </div>
+
+            <div class="match-status">UPCOMING FIXTURE</div>
+
+            <div class="teams">
+
+                <div class="team">
+                    <div class="team-logo">P</div>
+                    <strong>PREM XI</strong>
+                </div>
+
+                <div class="vs">VS</div>
+
+                <div class="team">
+                    <div class="team-logo opponent">M</div>
+                    <strong>MUMBAI FC</strong>
+                </div>
+
+            </div>
+
+            <div class="match-info">
+                <span>DEFENDER</span>
+                <span>LEFT BACK</span>
+                <span>#02</span>
+            </div>
+
+            <button id="analysisBtn">
+                RUN MATCH ANALYSIS
+            </button>
+        </section>
+
+
+        <!-- RADAR -->
+        <section class="glass radar-panel">
+
+            <div class="section-heading">
+                <h3>PLAYER RADAR</h3>
+                <div class="live-badge">OVR 82</div>
+            </div>
+
+            <div class="radar-wrap">
+
+                <div class="radar">
+
+                    <div class="radar-ring r1"></div>
+                    <div class="radar-ring r2"></div>
+                    <div class="radar-ring r3"></div>
+
+                    <div class="radar-axis a1"></div>
+                    <div class="radar-axis a2"></div>
+                    <div class="radar-axis a3"></div>
+                    <div class="radar-axis a4"></div>
+                    <div class="radar-axis a5"></div>
+                    <div class="radar-axis a6"></div>
+
+                    <div class="radar-shape"></div>
+
+                    <span class="rl rlt">PACE</span>
+                    <span class="rl rrt">DEF</span>
+                    <span class="rl rrb">PASS</span>
+                    <span class="rl rlb">STA</span>
+                    <span class="rl rll">VIS</span>
+                    <span class="rl rtm">FORM</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HEATMAP -->
+        <section class="glass heatmap-panel">
+
+            <div class="section-heading">
+                <h3>LB HEATMAP</h3>
+                <div class="live-badge">POSITION DATA</div>
+            </div>
+
+            <div class="pitch">
+
+                <div class="pitch-half"></div>
+                <div class="pitch-box"></div>
+                <div class="pitch-circle"></div>
+
+                <div class="pitch-dot d1"></div>
+                <div class="pitch-dot d2"></div>
+                <div class="pitch-dot d3"></div>
+                <div class="pitch-dot d4"></div>
+                <div class="pitch-dot d5"></div>
+
+                <div class="heat-zone z1"></div>
+                <div class="heat-zone z2"></div>
+                <div class="heat-zone z3"></div>
+
+            </div>
+
+            <div class="heat-label">
+                <span>DEFENSIVE COVERAGE</span>
+                <b>HIGH</b>
+            </div>
+
+        </section>
+
+
+        <!-- PHYSICAL -->
+        <section class="glass fitness">
+
+            <div class="section-label">05 / PHYSICAL CONDITION</div>
+
+            <div class="fitness-circle">
+                <div>
+                    <strong>92%</strong>
+                    <small>FITNESS</small>
+                </div>
+            </div>
+
+            <div class="condition-list">
+
+                <div>
+                    <span>ENERGY</span>
+                    <b>87%</b>
+                </div>
+
+                <div>
+                    <span>SHARPNESS</span>
+                    <b>94%</b>
+                </div>
+
+                <div>
+                    <span>FATIGUE</span>
+                    <b>18%</b>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI SCOUT -->
+        <section class="glass scout-panel">
+
+            <div class="section-heading">
+                <h3>AI SCOUT REPORT</h3>
+                <div class="live-badge">NEXUS AI</div>
+            </div>
+
+            <div class="scout-line">
+                <span>THREAT LEVEL</span>
+                <b>LOW</b>
+            </div>
+
+            <p class="scout-text" id="scoutText">
+                Prem shows strong defensive positioning, recovery pace
+                and 1v1 defensive potential. Primary development focus:
+                progressive passing and attacking transitions.
+            </p>
+
+            <div class="recommendation">
+                <span>NEXT DEVELOPMENT TARGET</span>
+                <strong>PASSING → 82</strong>
+            </div>
+
+        </section>
+
+
+        <!-- PLAYER PROGRESSION -->
+        <section class="glass progression-panel">
+
+            <div class="section-heading">
+                <h3>PLAYER PROGRESSION</h3>
+                <div class="live-badge">SEASON</div>
+            </div>
+
+            <div class="progress-row">
+                <span>OVERALL</span>
+                <strong>82 → 84</strong>
+            </div>
+
+            <div class="progress-row">
+                <span>DEFENDING</span>
+                <strong>91 → 93</strong>
+            </div>
+
+            <div class="progress-row">
+                <span>PASSING</span>
+                <strong>79 → 82</strong>
+            </div>
+
+            <div class="progress-row">
+                <span>VISION</span>
+                <strong>81 → 85</strong>
+            </div>
+
+            <button class="mode-btn" id="matchModeBtn">
+                ACTIVATE MATCH MODE
+            </button>
+
+        </section>
+
+
+        <!-- TACTICAL ADVISOR -->
+        <section class="glass tactical-panel">
+
+            <div class="section-heading">
+                <h3>AI TACTICAL ADVISOR</h3>
+                <div class="live-badge">SMART AI</div>
+            </div>
+
+            <div class="tactical-buttons">
+
+                <button class="tactic active" data-mode="DEFENSIVE">
+                    🛡 DEFENSIVE
+                </button>
+
+                <button class="tactic" data-mode="BALANCED">
+                    ⚖ BALANCED
+                </button>
+
+                <button class="tactic" data-mode="ATTACK">
+                    ⚡ ATTACK
+                </button>
+
+            </div>
+
+            <div class="tactical-output" id="tacticalOutput">
+                Hold your position, protect the left channel and
+                prioritize defensive recovery.
+            </div>
+
+        </section>
+
+
+        <!-- LIVE SIMULATOR -->
+        <section class="glass simulator-panel">
+
+            <div class="section-heading">
+                <h3>LIVE MATCH SIMULATOR</h3>
+                <div class="live-badge" id="simStatus">READY</div>
+            </div>
+
+            <div class="sim-score">
+                <span>PREM XI</span>
+                <strong id="score">0 - 0</strong>
+                <span>MUMBAI FC</span>
+            </div>
+
+            <div class="sim-stats">
+
+                <div>
+                    <span>POSSESSION</span>
+                    <b id="possession">52%</b>
+                </div>
+
+                <div>
+                    <span>TACKLES</span>
+                    <b id="tackles">0</b>
+                </div>
+
+                <div>
+                    <span>INTERCEPTIONS</span>
+                    <b id="interceptions">0</b>
+                </div>
+
+                <div>
+                    <span>PASSES</span>
+                    <b id="passes">0</b>
+                </div>
+
+                <div>
+                    <span>DISTANCE</span>
+                    <b id="distance">0.0 KM</b>
+                </div>
+
+                <div>
+                    <span>RATING</span>
+                    <b id="matchRating">6.0</b>
+                </div>
+
+            </div>
+
+            <button id="simulationBtn">
+                START SIMULATION
+            </button>
+
+        </section>
+
+
+        <!-- TACTICAL PITCH -->
+        <section class="glass tactical-pitch-panel">
+
+            <div class="section-heading">
+                <h3>TACTICAL PITCH</h3>
+                <div class="live-badge">LB POSITION</div>
+            </div>
+
+            <div class="big-pitch">
+
+                <div class="center-line"></div>
+                <div class="center-circle"></div>
+
+                <div class="box-left"></div>
+                <div class="box-right"></div>
+
+                <div class="player-marker prem-marker">
+                    P
+                    <span>PREM</span>
+                </div>
+
+                <div class="player-marker teammate t1">7</div>
+                <div class="player-marker teammate t2">8</div>
+                <div class="player-marker teammate t3">9</div>
+
+                <div class="player-marker opponent-marker o1">M</div>
+                <div class="player-marker opponent-marker o2">M</div>
+                <div class="player-marker opponent-marker o3">M</div>
+
+                <div class="pass-arrow arrow-one"></div>
+                <div class="pass-arrow arrow-two"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERFORMANCE MONITOR -->
+        <section class="glass monitor-panel">
+
+            <div class="section-heading">
+                <h3>PERFORMANCE MONITOR</h3>
+                <div class="live-badge">REALTIME</div>
+            </div>
+
+            <div class="monitor">
+
+                <div class="monitor-item">
+                    <span>PACE</span>
+                    <div class="monitor-bar">
+                        <i style="width:88%"></i>
+                    </div>
+                    <b>88%</b>
+                </div>
+
+                <div class="monitor-item">
+                    <span>DEFENCE</span>
+                    <div class="monitor-bar">
+                        <i style="width:91%"></i>
+                    </div>
+                    <b>91%</b>
+                </div>
+
+                <div class="monitor-item">
+                    <span>STAMINA</span>
+                    <div class="monitor-bar">
+                        <i style="width:86%"></i>
+                    </div>
+                    <b>86%</b>
+                </div>
+
+                <div class="monitor-item">
+                    <span>SHARPNESS</span>
+                    <div class="monitor-bar">
+                        <i style="width:94%"></i>
+                    </div>
+                    <b>94%</b>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- XP SYSTEM -->
+        <section class="glass xp-panel">
+
+            <div class="section-heading">
+                <h3>PLAYER DEVELOPMENT</h3>
+                <div class="live-badge">LEVEL 18</div>
+            </div>
+
+            <div class="xp-top">
+                <strong>LEVEL 18</strong>
+                <span id="xpText">2450 / 3000 XP</span>
+            </div>
+
+            <div class="xp-bar">
+                <i id="xpBar"></i>
+            </div>
+
+            <div class="xp-next">
+                <span>NEXT LEVEL</span>
+                <b>OVR 83</b>
+            </div>
+
+        </section>
+
+
+        <!-- ACHIEVEMENTS -->
+        <section class="glass achievements">
+
+            <div class="section-label">07 / ACHIEVEMENTS</div>
+
+            <div class="achievement">
+                <div>🛡️</div>
+                <div>
+                    <strong>DEFENSIVE WALL</strong>
+                    <p>Elite defensive rating</p>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div>⚡</div>
+                <div>
+                    <strong>PACE ENGINE</strong>
+                    <p>High-speed recovery</p>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div>🎯</div>
+                <div>
+                    <strong>VISION</strong>
+                    <p>Advanced passing awareness</p>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div>🔥</div>
+                <div>
+                    <strong>IN FORM</strong>
+                    <p>94 current form rating</p>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <span>FOOTBALL NEXUS v3.0</span>
+    <span>PLAYER ID: PREM-02</span>
+    <span id="clock">SYSTEM TIME</span>
+</footer>
+
+
+<div class="toast" id="toast">
+    NEXUS SYSTEM INITIALIZED
+</div>
+
+
+<!-- SECRET OVERLAY -->
+<div class="secret-overlay" id="secretOverlay">
+
+    <div class="secret-box">
+
+        <div class="secret-title">
+            NEXUS // BLACK PROTOCOL
+        </div>
+
+        <div class="secret-code">
+            ACCESS GRANTED
+        </div>
+
+        <p>
+            Hidden player intelligence layer unlocked.
+        </p>
+
+        <div class="secret-grid">
+            <span>PLAYER</span>
+            <b>PREM-02</b>
+
+            <span>ROLE</span>
+            <b>LEFT BACK</b>
+
+            <span>FOOT</span>
+            <b>RIGHT</b>
+
+            <span>STATUS</span>
+            <b>ELITE</b>
+        </div>
+
+        <button id="closeSecret">
+            CLOSE NEXUS
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
